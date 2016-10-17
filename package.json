@@ -1,0 +1,26 @@
+{
+  "name": "tech_test_monday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+     "test-unit": "NODE_ENV=test mocha '/**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nephast/tech_test_monday.git"
+  },
+  "author": "s g",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nephast/tech_test_monday/issues"
+  },
+  "homepage": "https://github.com/nephast/tech_test_monday#readme"
+}
