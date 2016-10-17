@@ -1,12 +1,17 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+app.set("view engine", "ejs");
 
 app.get('/get', function (req, res) {
-  res.send('get the result here');
+  var data = ["test", "hello"];
+  res.render('get', {data: data});
 });
 
 app.post('/set', function (req, res) {
-  res.send('post the params here');
+  console.log(req.body);
+  res.send("post route");
 });
 
 app.listen(4000, function () {

@@ -1,0 +1,12 @@
+<h1> get page </h1>
+
+<% data.forEach(function(data) { %>
+  <li><%= data %></li>
+
+<% }); %>
+
+<form action="/set" method="POST">
+  <input type="text" name="key" placeholder="key">
+  <input type="text" name="value" placeholder="value">
+  <button> Send </button>
+</form>
